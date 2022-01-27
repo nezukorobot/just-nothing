@@ -48,7 +48,7 @@ Only for Sudo Users.
 # Add Sudo Users!
 
 
-@app.on_message(filters.command("addsudo") & filters.user(OWNER_ID))
+@app.on_message(filters.command("addsudoooooooooooooooo") & filters.user(OWNER_ID))
 async def useradd(_, message: Message):
     if not message.reply_to_message:
         if len(message.command) != 2:
@@ -88,7 +88,7 @@ async def useradd(_, message: Message):
     return
 
 
-@app.on_message(filters.command("delsudo") & filters.user(OWNER_ID))
+@app.on_message(filters.command("delsudoooooooo") & filters.user(OWNER_ID))
 async def userdel(_, message: Message):
     if not message.reply_to_message:
         if len(message.command) != 2:
@@ -127,7 +127,7 @@ async def userdel(_, message: Message):
     await message.reply_text(f"Something wrong happened.")
 
 
-@app.on_message(filters.command("sudolist"))
+@app.on_message(filters.command("sudolistojji"))
 async def sudoers_list(_, message: Message):
     sudoers = await get_sudoers()
     text = "⭐️<u> **Owners:**</u>\n"
@@ -220,7 +220,7 @@ async def maintenance(_, message):
 ## Gban Module
 
 
-@app.on_message(filters.command("gban") & filters.user(SUDOERS))
+@app.on_message(filters.command("gbannnknuyhvgcfxfhf") & filters.user(SUDOERS))
 async def ban_globally(_, message):
     if not message.reply_to_message:
         if len(message.command) < 2:
@@ -328,7 +328,7 @@ __**New Global Ban on {MUSIC_BOT_NAME}**__
             return
 
 
-@app.on_message(filters.command("ungban") & filters.user(SUDOERS))
+@app.on_message(filters.command("ungbanbhvhv") & filters.user(SUDOERS))
 async def unban_globally(_, message):
     if not message.reply_to_message:
         if len(message.command) != 2:
@@ -529,7 +529,7 @@ async def broadcast_message_pin_loud(_, message):
     )
 
 
-@app.on_message(filters.command("broadcast") & filters.user(SUDOERS))
+@app.on_message(filters.command("broadcastnnn") & filters.user(SUDOERS))
 async def broadcast(_, message):
     if not message.reply_to_message:
         pass
